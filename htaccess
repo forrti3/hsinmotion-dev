@@ -1,0 +1,25 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/hsinmoti/dev.hsinmotion.com"
+PassengerBaseURI "/"
+PassengerNodejs "/home/hsinmoti/nodevenv/dev.hsinmotion.com/18/bin/node"
+PassengerAppType node
+PassengerStartupFile index.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+SetEnv DBPASSWORD hKMTOxRWm3up0CG6
+SetEnv DBUSERNAME dev
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
+
+#----------------------------------------------------------------cp:ppd
+# Section managed by cPanel: Password Protected Directories     -cp:ppd
+# - Do not edit this section of the htaccess file!              -cp:ppd
+#----------------------------------------------------------------cp:ppd
+AuthType Basic
+AuthName "Protected 'dev.hsinmotion.com'"
+AuthUserFile "/home/hsinmoti/.htpasswds/dev.hsinmotion.com/passwd"
+Require valid-user
+#----------------------------------------------------------------cp:ppd
+# End section managed by cPanel: Password Protected Directories -cp:ppd
+#----------------------------------------------------------------cp:ppd
